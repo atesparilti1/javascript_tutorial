@@ -37,6 +37,9 @@ if(shouldDrive){
     console.log("Someone else should drive!")
 }
 
+
+//switch
+
 const day = "monday";
 switch(day) {
     case "monday":
@@ -72,3 +75,34 @@ switch(day) {
          
 }
 */
+
+//functions
+function calcAge(birthYear){
+    return 2024-birthYear;
+}
+
+const age1 =calcAge(2007);
+console.log(age1);
+
+const calcAge2 = function(birthYear){
+    return 2024-birthYear;
+}
+
+const age2= calcAge2(2007);
+
+console.log(age1, age2);
+
+
+// arrow function
+const calcAge3 = birthYear =>  2024- birthYear;
+const age3 = calcAge3(2007);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear) => {
+    const age = 2024- birthYear;
+    const retirement = 65- age;
+    return retirement;
+}
+
+console.log(yearsUntilRetirement(2007));
+
