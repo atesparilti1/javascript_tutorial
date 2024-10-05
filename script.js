@@ -74,7 +74,7 @@ switch(day) {
         break;
          
 }
-*/
+
 
 //functions
 function calcAge(birthYear){
@@ -105,4 +105,44 @@ const yearsUntilRetirement = (birthYear) => {
 }
 
 console.log(yearsUntilRetirement(2007));
+
+
+
+//Arrays
+const friends = ["Emir" , "Kaan" , "Mert"];
+friends[2] = "Murat";
+console.log(friends);
+
+const years = new Array(1991, 1994, 2001, 2045 , 2049);
+console.log(years.length);
+
+const firstName = "Ates";
+const ates = [firstName, "Parıltı" , 2024- 2007 , "Student" , friends];
+console.log(ates);
+
+const calcAge4 = function(dogumyili) {
+    return 2024 - dogumyili;
+}
+
+const age4 = calcAge4(years[0]);
+
+//Add element
+friends.unshift("Mert");
+console.log(friends);
+
+//Remove element
+friends.pop(); //Last element
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift(); //first element
+
+console.log(friends.indexOf("Mert"));
+console.log(friends.indexOf("Emir"));
+
+console.log(friends.includes("Emir")); //kontrol
+
+
+*/
 
